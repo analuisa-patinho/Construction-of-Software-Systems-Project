@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="154.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.SelectActivityController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="68.0" prefHeight="17.0" prefWidth="54.0" text="Activity" />
+      <Label layoutX="14.0" layoutY="14.0" text="Set Regular Activity Schedule">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox id="regularActivityComboBox" fx:id="regularActivityComboBox" layoutX="108.0" layoutY="64.0" onAction="#activitySelected" prefWidth="150.0" promptText="Select Regular Activity" />
+      <Button fx:id="nextButton1" layoutX="525.0" layoutY="115.0" mnemonicParsing="false" onAction="#navigateToSessions" prefWidth="85.0" text="Next" />
+      <Button fx:id="mainMenuButton" layoutX="437.0" layoutY="115.0" mnemonicParsing="false" onAction="#navigateToMainMenu" prefWidth="78.0" text="Main Menu" />
+   </children>
+</AnchorPane>
